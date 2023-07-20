@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Records Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main">
+    <div class="container">
+        <h2 style>Pharmacy Records</h2>
+        <form id="medicineForm">
+            <div>
+                <label for="medicineName">Medicine Name</label>
+                <input type="text" id="medicineName" placeholder="Enter the medicine name" required>
+            </div>
+            <div>
+                <label for="id">ID</label>
+                <input type="text" id="id" placeholder="Enter the ID" required>
+            </div>
+            <div>
+                <label for="medicineType">Medicine Type</label>
+                <input type="text" id="medicineType" placeholder="Enter the medicine type" required>
+            </div>
+            <div>
+                <label for="companyName">Company Name</label>
+                <input type="text" id="companyName" placeholder="Enter the company name" required>
+            </div>
+            <div>
+                <label for="unitPrice">Unit Price</label>
+                <input type="number" id="unitPrice" placeholder="Enter the unit price" required>
+            </div>
+            <div>
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" placeholder="Enter the quantity" required>
+            </div>
+            <div>
+                <label for="expireDate">Expire Date</label>
+                <input type="date" id="expireDate" required>
+            </div>
+            <div class="form-action-buttons">
+                <button type="submit" id="saveBtn">Save Record</button>
+                <button type="button" id="updateBtn" disabled>Update Record</button>
+                <button type="button" id="deleteBtn" disabled>Delete Record</button>
+            </div>
+        </form>
+
+        <table id="medicineTable">
+            <thead>
+                <tr>
+                    <th>Medicine Name</th>
+                    <th>ID</th>
+                    <th>Medicine Type</th>
+                    <th>Company Name</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Expire Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Saved records will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
