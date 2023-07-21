@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dash Board</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        .D1{
+            position: relative; 
+            float: left; 
+            border: 2px solid green; 
+            height: 100px; 
+            width: 200px; 
+            margin-top: 150px; 
+            margin-left: 400px; 
+            color: aliceblue; 
+            font-size: 110%; 
+            background-color: rgb(95, 182, 95);
+            border-radius: 20%;
+            box-shadow: 15px 20px 15px 5px rgb(5, 56, 5) inset;
+
+        }
+        .D2{
+            position: relative; 
+            float: left; 
+            border: 2px solid green; 
+            height: 100px; 
+            width: 200px; 
+        /*    margin-top: 30px; 
+            margin-left: 800px; */
+            margin-left: 60px;
+            margin-top: 150px; 
+            color: aliceblue; 
+            font-size: 110%; 
+            background-color: rgb(95, 182, 95);
+            border-radius: 20%;
+            box-shadow: 15px 20px 15px 5px rgb(5, 56, 5) inset;
+        }
+        .D3{
+            position: relative; 
+            float: left; 
+            border: 2px solid green; 
+            height: 100px; 
+            width: 200px;  
+            margin-top: 70px; 
+            margin-left: 400px; 
+            color: aliceblue; 
+            font-size: 110%; 
+            background-color: rgb(95, 182, 95);
+            border-radius: 20%;
+            box-shadow: 15px 20px 15px 5px rgb(5, 56, 5) inset;
+        }
+        .D4{
+            position: relative; 
+            float: left; 
+            border: 2px solid green; 
+            height: 100px; 
+            width: 200px; 
+          /*  margin-top: 60px; 
+            margin-left: 800px; */
+            margin-top: 70px;
+            margin-left: 60px;
+            color: aliceblue; 
+            font-size: 110%; 
+            background-color: rgb(95, 182, 95);
+            border-radius: 20%;
+            box-shadow: 15px 20px 15px 5px rgb(5, 56, 5) inset;
+        }
+    </style>
+</head>
+<body class="main">
+    <div >
+        <center><h1 style="color: aliceblue; background-color: rgb(98, 173, 98); ">DashBoard</h1></center>
+    </div>
+    <div style="position: absolute;">
+        <div class="D1">
+            <center><button type="submit" onclick="Home()" style="margin-top: 32px; font-size: 70%; font-style: oblique; height:50px; width: 180px; opacity: 0.9; background-color: transparent;"><h2>Home Page</h2></button></center>
+        </div>
+        <div class="D2">
+            <center><button type="submit" onclick="Record1()" style="margin-top: 32px; font-size: 70%; font-style: oblique; height:50px; width: 180px; opacity: 0.9; background-color: transparent;"><h2>Record Management</h2></button></center>
+        </div>
+        <div class="D3">
+            <center><button type="submit" onclick="Order()" style="margin-top: 32px; font-size: 70%; font-style: oblique; height:50px; width: 180px; opacity: 0.9; background-color: transparent;"><h2>Place Order</h2></button></center>
+        </div>
+        <div class="D4">
+            <center><button type="submit" onclick="Contact()" style="margin-top: 32px; font-size: 70%; font-style: oblique; height:50px; width: 180px; opacity: 0.9; background-color: transparent;"><h2>Contact Us</h2></button></center>
+        </div>
+
+    </div>
+      
+</body>
+</html>
+<script>
+    function Home(){
+          window.location.href = "HomePage.html";
+      }
+      function Record1(){
+          window.location.href = "Record.html";
+      }
+      function Order(){
+          window.location.href = "Place Order.html";
+      }
+      function Contact(){
+          window.location.href = "Contact Us.html";
+      }
+</script>
